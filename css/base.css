@@ -1,0 +1,31 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Rock Star', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: 0.035em;
+	/* background-color: #191919;  */
+	background-image: url('../img/background.png'); /* Путь к вашей картинке */
+		background-size: cover; /* Растягивает картинку так, чтобы она покрывала всю область фона */
+		background-position: center; /* Центрирует картинку на фоне */
+}
+
+/* Utility */
+.none {
+	display: none !important;
+}
+
+.visually-hidden {
+	opacity: 0;
+	visibility: hidden;
+	width: 0px;
+	height: 0px;
+	display: block;
+	margin-left: -10000px;
+	background: transparent;
+	font-size: 0;
+}

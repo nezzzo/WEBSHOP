@@ -1,0 +1,121 @@
+/*hover*/
+.sq:hover {
+    background-image: url(../img/sidebar/sq-hover.svg);
+}
+
+.see_all:hover {
+    color: #fff;
+}
+
+
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between; /* Равномерно распределяет элементы по ширине */
+    align-items: center; /* Выравнивает элементы по вертикали */
+    position: fixed;
+    z-index: 1000;
+    top: 0; 
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    height: 68px;
+    background-color: #202020;
+}
+
+.header-tg {
+    margin-left: 120px;
+}
+
+/* .header-logo {
+
+} */
+
+.header-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.header-nav ul li:last-child {
+    margin-right: 90px;
+}
+
+
+
+/*sidebar*/
+.sidebar {
+    float: left;
+    position: relative;
+    width: 320px;
+    min-height: 100%; /* Минимальная высота равна высоте экрана минус отступ сверху */
+    margin-top: 7px;
+    margin-left: 120px;
+    padding: 30px 20px 30px 25px; 
+    background-color: rgba(217, 217, 217, 0.1);
+}
+
+
+/*sidebar details*/
+.price {
+    margin-bottom: 60px;
+}
+
+.side-title {
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+	color: #fff;
+	font-size: 21px;
+	line-height: 1;
+    margin-bottom: 30px;
+}
+
+.side-list {
+    margin-bottom: 60px;
+}
+
+.side-list li {
+    margin-bottom: 20px;
+}
+
+.side-list img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.see_all {
+    font-family: 'Unbounded';
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+	color: #7149E2;
+	font-size: 17px;
+	line-height: 1;
+    margin-bottom: 0px;
+}
+
+
+
+/* catalog */
+.grid-container {
+    display: grid;
+    margin-left: 560px; /* Отступ слева, чтобы каталог начинался справа от боковой панели */
+    margin-top: 142px;
+    margin-right: 4%;
+    grid-template-columns: repeat(3, 1fr); /* 3 столбца, равной ширины */
+     grid-gap: 30px 0px; /* Промежуток между элементами */
+}
+
+.grid-item img {
+    width: 90%; /* Установка максимальной ширины для изображения */
+    height: auto; /* Автоматическое вычисление высоты */
+}
